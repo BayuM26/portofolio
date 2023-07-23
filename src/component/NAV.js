@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-export default function NAV(){
+export default function NAV({title}){
+    useEffect(() => {
+        document.title = title;
+    }, []);
     return (
         <div className="navbar shadow-lg z-40 bg-gradient-to-r from-gray-700 to-slate-800">
             <div className="navbar-start">

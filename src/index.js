@@ -10,15 +10,13 @@ import Kontak from './page/Kontak';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Beranda/>} />
-          <Route path="/contact" element={<Kontak/>} />
-          <Route path="/portofolio/SPP" element={<SPP/>} />
-        </Routes>
-      </BrowserRouter>
-    </React.StrictMode>,
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path="/" element={<Beranda/>} />
+        <Route path="/contact" element={<Kontak/>} />
+        <Route path="/portofolio/SPP" element={<SPP/>} />
+      </Routes>
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

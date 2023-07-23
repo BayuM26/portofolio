@@ -5,7 +5,7 @@ import Footer from "../../component/Footer";
 function SPP() { 
     return (
         <div className="bg-gradient-to-r from-gray-700 to-slate-800">
-           <NAV/>
+           <NAV title="Portofolio Aplikasi SPP"/>
 
             {/* cover */}
                 <div className="hero min-h-screen">

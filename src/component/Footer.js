@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() { 
+function Footer({linkedin,github}) { 
     return(
         <footer className="footer items-center p-4 bg-neutral text-neutral-content">
             <div className="items-center grid-flow-col">
@@ -8,10 +8,10 @@ function Footer() {
             </div>
             <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                 <a href="https://www.linkedin.com/in/bayumaulana26/" target="_blank">
-                    <img className="w-7" src="./../icon/linkedin-original.svg" alt="icon github" />
+                    <img className="w-7" src={linkedin} alt="icon github" />
                 </a>
                 <a href="https://github.com/BayuM26?tab=repositories" target="_blank">
-                    <img className="w-7" src="./../icon/gi.svg" alt="icon linked" />
+                    <img className="w-7" src={github} alt="icon linked" />
                 </a>
             </div>
         </footer>
