@@ -1,16 +1,18 @@
-import React from "react"
+import React, { useRef } from "react"
 import NAV from "../../component/NAV"
 import Footer from "../../component/Footer";
 
-function SPP() { 
+function SPP() {
+    const imageTop = useRef();
+
     return (
-        <div className="bg-gradient-to-r from-gray-700 to-slate-800">
+        <div className="bg-gradient-to-r from-gray-700 to-slate-800 text-gray-300">
            <NAV title="Portofolio Aplikasi SPP"/>
 
             {/* cover */}
                 <div className="hero min-h-screen">
                     <div className="hero-content flex-col lg:flex-row">
-                        <img src="./../Aplikasi_SPPSekolah.jpg" className="md:w-6/12 sm:w-8/12 w-11/12 rounded-lg shadow-2xl" alt="gambar" />
+                        <img ref={imageTop} id="logo" src="/./../portofolio/Aplikasi_SPPSekolah.jpg" className="md:w-6/12 sm:w-8/12 w-11/12 rounded-lg shadow-2xl" alt="gambar" />
                         <div>
                             <h1 className="md:text-5xl sm:text-4xl text-xl font-bold">APLIKASI SISTEM PEMBAYARAN SEKOLAH</h1>
                         </div>
@@ -95,8 +97,8 @@ function SPP() {
                     <div className="hero-content flex-col">
                         <h1 className="text-xl font-bold uppercase">Fitur Pembayaran SPP</h1>
                         <div className="grid md:grid-cols-2 gap-5">
-                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="./../spp/pembayaran.jpg" alt="gambar Pembayaran" />
-                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="./../spp/pembayaran2.jpg" alt="gambar Pembayaran" />
+                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="/./../portofolio/spp/pembayaran.jpg" alt="gambar Pembayaran" />
+                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="/./../portofolio/spp/pembayaran2.jpg" alt="gambar Pembayaran" />
                         </div>
                     </div>
                 </div>
@@ -107,8 +109,8 @@ function SPP() {
                     <div className="hero-content flex-col">
                         <h1 className="text-xl font-bold uppercase">Fitur Pembayaran untuk Angkatan selanjutnya</h1>
                         <div className="grid md:grid-cols-2 gap-5">
-                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="./../spp/pembayaranL.jpg" alt="gambar Pembayaran lebih" />
-                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="./../spp/pembayaranL2.jpg" alt="gambar Pembayaran lebih" />
+                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="/./../portofolio/spp/pembayaranL.jpg" alt="gambar Pembayaran lebih" />
+                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="/./../portofolio/spp/pembayaranL2.jpg" alt="gambar Pembayaran lebih" />
                         </div>
                     </div>
                 </div>
@@ -119,8 +121,8 @@ function SPP() {
                     <div className="hero-content flex-col">
                         <h1 className="text-xl font-bold uppercase">Fitur Pemberitahuan tunggakan melalui WhatsApp</h1>
                         <div className="grid md:grid-cols-2 gap-5">
-                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="./../spp/pemberitahuanwa.jpg" alt="gambar pemberitahuan wa" />
-                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="./../spp/pemberitahuanwa2.jpg" alt="gambar pemberitahuan wa" />
+                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="/./../portofolio/spp/pemberitahuanwa.jpg" alt="gambar pemberitahuan wa" />
+                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="/./../portofolio/spp/pemberitahuanwa2.jpg" alt="gambar pemberitahuan wa" />
                         </div>
                     </div>
                 </div>
@@ -131,14 +133,14 @@ function SPP() {
                     <div className="hero-content flex-col">
                         <h1 className="text-xl font-bold uppercase">Fitur Pembayaran tunggakan</h1>
                         <div className="grid md:grid-cols-2 gap-5">
-                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="./../spp/tunggakan.jpg" alt="gambar pemberitahuan wa" />
-                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="./../spp/tunggakan2.jpg" alt="gambar pemberitahuan wa" />
+                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="/./../portofolio/spp/tunggakan.jpg" alt="gambar pemberitahuan wa" />
+                            <img className="md:w-11/12 sm:w-8/12 sm:block sm:m-auto rounded-lg md:hover:scale-125 hover:scale-150 transition delay-150 duration-300" src="/./../portofolio/spp/tunggakan2.jpg" alt="gambar pemberitahuan wa" />
                         </div>
                     </div>
                 </div>
             {/* end Fitur Pembayaran tunggakan */}
 
-            <Footer/>
+            <Footer linkedin={'/./../portofolio/icon/linkedin-original.svg'} github={'/./../portofolio/icon/gi.svg'}/>
         </div>
     );
  }

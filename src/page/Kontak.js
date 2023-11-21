@@ -4,9 +4,8 @@ import Footer from "../component/Footer";
 
 function Kontak() { 
     return(
-        <div className="bg-gradient-to-r from-gray-700 to-slate-800">
+        <div className="bg-gradient-to-r from-gray-700 to-slate-800 text-gray-300">
             <NAV title="Contact"/>
-
             <div className="hero min-h-screen shadow-lg" id="portofolio">
                 <div className="hero-content flex-col space-y-10">
                     <h1 className="text-2xl font-bold">

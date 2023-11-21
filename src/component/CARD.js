@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-export default function CARD({img,title,href}){
+const CARD = ({img,title,href}) => {
     return (
         <Link to={href} className="hover:scale-110 hover:animate-pulse transition delay-150 duration-300 ease-in-out">
-            <div className="card md:w-96 sm:w-72 w-56 bg-base-100 shadow-xl">
+            <div className="card md:w-96 sm:w-72 w-64 shadow-xl bg-gray-800 md:h-72 sm:h-52 h-52">
                 <figure>
-                    <img src={img} alt="logo" />
+                    <img src={img} alt="logo"/>
                 </figure>
 
                 <div className="card-body">
@@ -15,3 +15,5 @@ export default function CARD({img,title,href}){
         </Link>
     )
 }
+
+export default CARD
