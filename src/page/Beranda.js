@@ -146,7 +146,7 @@ function Beranda() {
         {/* CARD PORTFOLIO*/}
           <div className="hero min-h-screen shadow-lg" id="portofolio">
             <div className="hero-content flex-col md:gap-40 gap-10 lg:flex-row">
-              <CARD href={"/portofolio/SPP"} img={"/./portofolio/Aplikasi_SPPSekolah.jpg"} title={'APLIKASI PEMBAYARAN SPP'}/>
+              <CARD href={"/SPP"} img={"/./portofolio/Aplikasi_SPPSekolah.jpg"} title={'APLIKASI PEMBAYARAN SPP'}/>
             </div>
           </div>
         {/* END CARD PORTFOLIO*/}

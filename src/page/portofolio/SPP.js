@@ -3,8 +3,8 @@ import NAV from "../../component/NAV"
 import Footer from "../../component/Footer";
 
 function SPP() {
+    console.log('tessssssss');
     const imageTop = useRef();
-
     return (
         <div className="bg-gradient-to-r from-gray-700 to-slate-800 text-gray-300">
            <NAV title="Portofolio Aplikasi SPP"/>
